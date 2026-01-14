@@ -1,8 +1,9 @@
 import socket
 import os
+import sys
 
 # host to listen on
-host = "192.168.0.196"
+host = sys.argv[1]
 
 # create a raw socket and bind it to the public interface
 if os.name == "nt":
